@@ -1,0 +1,62 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DNNModule1" type="Module" version="00.00.01">
+      <friendlyName>DNNModule1</friendlyName>
+      <description>Christoc.com DNNModule1 module</description>
+      <iconFile>~/Images/icon_extensions_32px.png</iconFile>
+      <owner>
+        <name>Christoc.com</name>
+        <organization>Christoc.com</organization>
+        <url>https://www.christoc.com/</url>
+        <email>modules@christoc.com</email>
+      </owner>
+     
+      <dependencies>
+        <dependency type="CoreVersion">09.08.00</dependency>
+      </dependencies>
+      
+      <components>
+       
+
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/DNNModule1</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DNNModule1</moduleName>
+            <foldername>DNNModule1</foldername>
+            <businessControllerClass>Christoc.Modules.DNNModule1.Components.FeatureController</businessControllerClass>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>DNNModule1</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/DNNModule1/dist/browser/index.html</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                 
+                  
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
